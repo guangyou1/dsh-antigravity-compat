@@ -1,0 +1,25 @@
+{
+  "name": "@local/dsh-antigravity-compat",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "DSH 提示词兼容插件：按 provider 保留模型信息，避免中转生成重复身份声明。",
+  "engines": { "node": "^22.19.0 || >=24.0.0" },
+  "keywords": ["deepseek-harness", "cordis", "antigravity", "dsh-plugin"],
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "cordis.patch.yml", "README.md", "CHANGELOG.md", "docs/verification.md"],
+  "scripts": {
+    "check": "node --check index.js",
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

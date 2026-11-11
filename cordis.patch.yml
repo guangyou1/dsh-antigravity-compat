@@ -1,0 +1,9 @@
+- insert:
+    - id: antigravity-prompt-compat
+      name: '@local/dsh-antigravity-compat'
+      config:
+        # Provider IDs, not display names or model IDs. Override in your profile
+        # if the relay uses another ID; this does not configure its URL.
+        providers:
+          - hahagemini
+          - antigravity

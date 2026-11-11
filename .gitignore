@@ -1,0 +1,14 @@
+node_modules/
+coverage/
+.cache/
+artifacts/
+__pycache__/
+*.log
+*.tgz
+*.db
+*.db-*
+.env
+.env.*
+.credentials*
+.DS_Store
+Thumbs.db
